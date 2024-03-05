@@ -1,0 +1,48 @@
+server:
+  port: 8088
+  servlet:
+    context-path: / 
+    encoding:
+      charset: UTF-8
+      
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/cube/
+      suffix: .jsp
+  mail:
+    host: smtp.gmail.com #SMTP 서버 호스트
+    port: 587 #SMTP 서버 포트
+    username: ccnccube@gmail.com #SMTP 서버 로그인 아이디: 발신자(이메일이 test@gmail.com 이면 test가 해당)
+    password: ualqagzyrwhgdnhx #SMTP 서버 로그인 패스워드: 앱 비밀번호(발급받은 16자리 코드)
+    properties:
+      mail:
+        smtp:
+          auth: true #사용자 인증 시도 여부 (기본값: false)
+          #timeout: 5000 #Socket Read Timeout 시간(ms) (기본값: 무한대)
+          starttls:
+            enable: true #StartTLS 활성화 여부 (기본값: false)  
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/cube
+    username: root
+    password: 1234
+
+  jpa:
+    open-in-view: true
+    database-platform: org.hibernate.dialect.MySQLDialect
+    show-sql: true
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      ddl-auto: update
+    properties:
+      hibernate.format_sql: true
+      
+server.servlet.jsp.init-parameters:
+  development: true
+#최대 업로드 크기 설정    
+  servlet:
+    multipart:
+      max-file-size: 300MB
+      max-request-size: 300MB

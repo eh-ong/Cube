@@ -1,0 +1,306 @@
+@charset "UTF-8";
+
+.label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.label1 {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 8px;
+  width: 100px;
+}
+
+.input {
+  width: 90%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input1 {
+  width: 40%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.input1_1 {
+  width: 40%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-top-left-radius: 4px;
+}
+
+.input2 {
+  width: 60%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input3 {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+}
+
+.input4 {
+  width: 100%;
+  padding: 10px;
+  margin-top: -1px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.input5 {
+  width: 50%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+.btn-login {
+  width: 100%;
+  background-color: #00a3f0;
+  color: #ffffff;
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+
+.btn-login:hover {
+  background-color: #004591;
+}
+
+.btn-checkId {
+  width: 20%;
+  background-color: #00a3f0;
+  color: #ffffff;
+  padding: 10.4px 15px;
+  font-size: 13px;
+  font-weight: 500;
+  border: none;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+
+.btn-checkId:hover {
+  background-color: #004591;
+}
+
+.btn-findAddr {
+  width: 20%;
+  background-color: #00a3f0;
+  color: #ffffff;
+  padding: 10.5px 15px;
+  font-size: 13px;
+  font-weight: 500;
+  border: none;
+  border-top-right-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+
+.btn-findAddr:hover {
+  background-color: #004591;
+}
+
+.btn-signUp {
+  width: 88.5%;
+  background-color: #00a3f0;
+  color: #ffffff;
+  padding: 10.8px 15px;
+  font-size: 13.5px;
+  font-weight: 500;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+
+.btn-signUp:hover {
+  background-color: #004591;
+}
+
+.btn-findIdPw {
+  width: 91%;
+  background-color: #00a3f0;
+  color: #ffffff;
+  padding: 10.8px 15px;
+  font-size: 13.5px;
+  font-weight: 500;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+
+.btn-findIdPw:hover {
+  background-color: #004591;
+}
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  /* text-decoration: none; */
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.bar{
+  width: 0.5px;
+  height: 10px;
+  background-color: #262626;
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+  /* margin-top: 6px; */
+}
+
+.underButton  {
+  margin: 0 auto;
+  padding: 10px;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.underButton a{
+  font-size: 0.8rem;
+}
+
+.underButton a:first-child{
+  margin-right: 15px;
+}
+
+.gender_list {
+	position: inherit;
+    width: 65%;
+    background-color: #ffffff;
+}
+
+.gender_list.error .radio_item label {
+    border-color: #ff3f3f;
+    color: #ff3f3f;
+    text-decoration: underline
+}
+
+.gender_list .radio_item {
+    width: 50%;
+}
+
+.radio_item {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.radio_item+.radio_item {
+    margin-left: -1px;
+}
+
+.radio_item:first-of-type {
+    border-radius: 4px 0 0 4px;
+}
+
+.radio_item:last-of-type {
+    border-radius: 0 4px 4px 0
+}
+
+.radio_item input:checked+label {
+    z-index: 1;
+    background-color: #ffffff;
+    font-weight: 600;
+    color: #00a3f0;
+    border-color: #00a3f0;
+    border-width: 1.5px;
+}
+
+.radio_item label {
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    height: 38px;
+    width: 100%;
+    padding: 6px 0;
+    border-radius: inherit;
+    border: 1px solid #c6c6c6;
+    font-size: 14px;
+    line-height: 24px;
+    color: #929294;
+    text-align: center; 
+}
+
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden
+}
+
+.text-checked {
+	display: flex;
+	color: #0080ff;
+	margin-left: 110px;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.text-danger {
+	width: 100%;
+	display: flex;
+	color: red;
+	margin-top: 3%;
+	margin-left: 5px;
+	font-size: 12px;
+}
+
+.text-danger-findIdPw {
+	width: 100%;
+	display: flex;
+	color: #ff0000;
+	font-size: 12px;
+	margin-top: -8px;
+	margin-bottom: 15px;
+}
